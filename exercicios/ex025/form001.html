@@ -11,6 +11,11 @@
     </style>
   </head>
   <body>
+    <!-- 
+    GET = Utiliza para dados não sensíveis: nome, sobrenome, altura, peso, etc. Não ultrapassa 3mil bytes, envio de fotos, O método GET, transfere os dados para o serviço através da URL, e a quantidade de caracteres é limitado
+
+     POST = Número de cartão de crédito, dados não apareçam na url, passou de 3 mil bytes, você pode realizar envios mais seguros, e não há limite para transmissão de informações.
+  -->
     <h1>Meu primeiro formulário</h1>
     <form action="cadastro.php" autocomplete="off">
       <p>
@@ -21,7 +26,6 @@
         <label for="isobrenome">Sobrenome:</label>
         <input type="text" name="sobrenome" id="isobrenome" />
       </p>
-
       <p><input type="submit" value="Enviar" /></p>
     </form>
   </body>
